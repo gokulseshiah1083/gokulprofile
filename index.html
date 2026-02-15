@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul Seshiah - Personal Website</title>
+    <meta name="description" content="Gokul Seshiah is an Engineering Leader at Mastercard focused on agentic AI platforms and operations, building high-performing teams and scalable cloud-native platforms.">
+    <meta name="keywords" content="Gokul Seshiah, Engineering Leader, Mastercard, Platform Engineering, Agentic AI, Operations, Payments, Data Engineering, Fraud Detection, Cloud Native">
+    <meta property="og:title" content="Gokul Seshiah | Engineering Leader @ Mastercard">
+    <meta property="og:description" content="Engineering leader with 20+ years of experience across Software Engineering, Product Management, and Solution Architecture. Building scalable cloud-native platforms and high-performing teams.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gokulseshiah1083.github.io/">
+    <link rel="canonical" href="https://gokulseshiah1083.github.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gokul Seshiah | Engineering Leader @ Mastercard">
+    <meta name="twitter:description" content="Engineering leader focused on agentic AI platforms and operations, platform reliability, and building high-performing teams.">
+    <meta name="twitter:url" content="https://gokulseshiah1083.github.io/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .typing-effect {
+            border-right: 3px solid #667eea;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { border-color: #667eea; }
+            51%, 100% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">GS</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-purple-600 transition-colors">Experience</a>
+                    <a href="#projects" class="text-gray-700 hover:text-purple-600 transition-colors">Impact</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition-colors">Skills</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-purple-600">About</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Experience</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Impact</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Skills</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Hi, I'm <span class="gradient-text">Gokul Seshiah</span>
+                </h1>
+                <div class="text-2xl md:text-3xl text-gray-700 mb-8">
+                    <span id="typing-text" class="typing-effect"></span>
+                </div>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Engineering Leader @ Mastercard | Agentic AI Platforms &amp; Operations | Building scalable cloud-native platforms and high-performing teams.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                        View Impact Areas
+                    </a>
+                    <a href="#contact" class="px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-lg hover:bg-purple-50 transition-colors">
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="mailto:gokuls@outlook.com" class="text-gray-600 hover:text-purple-600 transition-colors" aria-label="Email">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/gokulseshiah1083" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-purple-600 transition-colors" aria-label="GitHub">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gokul-seshiah-69aa8276/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-purple-600 transition-colors" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                About <span class="gradient-text">Me</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I’m looking to solve interesting business problems at scale. Engineering leader with 20+ years of experience across Software Engineering, Product Management, and Solution Architecture — leading global teams delivering mission-critical systems in Payments, Insurance, AI, and Data Engineering.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I build cloud-native platforms that power real-time decisioning, AI-driven fraud detection, and enterprise-wide data capabilities. I’m passionate about creating engineering cultures rooted in ownership, operational excellence, and customer-centric thinking.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-4 bg-purple-50 rounded-lg">
+                            <div class="text-3xl font-bold text-purple-600">20+ yrs</div>
+                            <div class="text-gray-600">Leadership &amp; Delivery</div>
+                        </div>
+                        <div class="text-center p-4 bg-purple-50 rounded-lg">
+                            <div class="text-3xl font-bold text-purple-600">11+ yrs</div>
+                            <div class="text-gray-600">@ Mastercard</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-white text-6xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Professional <span class="gradient-text">Experience</span>
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <h3 class="text-2xl font-semibold">Engineering Leader</h3>
+                        <div class="text-gray-600">Mastercard • Jun 2014 – Present • Greater St. Louis</div>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-gray-700 leading-relaxed">
+                        <li>Leading teams delivering capabilities to authenticate users and combat fraud, aligned to platform and organizational roadmaps.</li>
+                        <li>Owned end-to-end feature delivery, prioritization, execution, and stakeholder alignment across product and engineering.</li>
+                        <li>Previously led Enterprise Data Platforms strategy across governance, privacy, inventory, quality, access, and consent capabilities.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <h3 class="text-2xl font-semibold">Technical Consultant</h3>
+                        <div class="text-gray-600">Fast Switch, Ltd. • Nov 2013 – May 2014</div>
+                    </div>
+                    <p class="mt-4 text-gray-700 leading-relaxed">Consulting supporting Nationwide Insurance (Auto and Property Insurance and Support).</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <h3 class="text-2xl font-semibold">Software Development Consultant</h3>
+                        <div class="text-gray-600">Technosoft Corporation / iknowvate • Mar 2013 – Nov 2013</div>
+                    </div>
+                    <p class="mt-4 text-gray-700 leading-relaxed">Modernized benefits management systems by converting legacy code to Java and redesigning batch logic into database-driven processing.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <h3 class="text-2xl font-semibold">Technical Lead / Lead Application Developer / Project Engineer</h3>
+                        <div class="text-gray-600">Wipro • Oct 2005 – Mar 2013</div>
+                    </div>
+                    <p class="mt-4 text-gray-700 leading-relaxed">Led development and production support for large-scale insurance and payments systems, focusing on fault-tolerant solutions and modernization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Impact <span class="gradient-text">Areas</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-layer-group text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Platform Engineering at Scale</h3>
+                        <p class="text-gray-600 mb-4">Built cloud-native platforms that spin up environments in minutes and support secure, compliant real-time decisioning.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Cloud Native</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Reliability</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Automation</span>
+                        </div>
+                        <div class="text-sm text-gray-600">Focus: platform velocity, operational excellence, scalable delivery.</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Payments &amp; Fraud Platforms</h3>
+                        <p class="text-gray-600 mb-4">Leading teams building capabilities to authenticate users and combat fraud with AI-driven scoring and secure decision processing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Security</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">Compliance</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">AI</span>
+                        </div>
+                        <div class="text-sm text-gray-600">Focus: decision platforms, fraud detection, secure authentication.</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-database text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Enterprise Data Leadership</h3>
+                        <p class="text-gray-600 mb-4">Led product strategy for data governance, privacy, inventory, and quality platforms used across the enterprise.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Data Governance</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Privacy</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Quality</span>
+                        </div>
+                        <div class="text-sm text-gray-600">Focus: enterprise platforms, access &amp; consent, data capabilities.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Skills &amp; <span class="gradient-text">Credentials</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-cogs text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Top Skills</h3>
+                    <p class="text-gray-600 text-sm">Automation, Operations, High Performance Teams</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Certifications</h3>
+                    <p class="text-gray-600 text-sm">AI for Everyone, The Data Scientist’s Toolbox, What is Data Science?</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-language text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Languages</h3>
+                    <p class="text-gray-600 text-sm">English, Tamil, Telugu, Hindi, Kannada, Malayalam</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-orange-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Innovation</h3>
+                    <p class="text-gray-600 text-sm">Patent: Flexible computing job scheduling systems and methods</p>
+                </div>
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">Honors &amp; Awards</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>Bravo Award</li>
+                        <li>Outstanding Contribution Bravo Award</li>
+                        <li>Extraordinary Bravo Award</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">More Certifications</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>Design Thinking and Global Startup</li>
+                        <li>Inspiring and Motivating Individuals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Get In <span class="gradient-text">Touch</span>
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="w-full px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden"></div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <p class="text-gray-600 mb-6">Or reach out directly</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="mailto:gokuls@outlook.com" class="flex items-center text-gray-600 hover:text-purple-600">
+                            <i class="fas fa-envelope mr-2"></i>
+                            gokuls@outlook.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/gokul-seshiah-69aa8276/" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-600 hover:text-purple-600">
+                            <i class="fab fa-linkedin mr-2"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2024 Gokul Seshiah. All rights reserved.</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="mailto:gokuls@outlook.com" class="hover:text-purple-400 transition-colors" aria-label="Email">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="https://github.com/gokulseshiah1083" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors" aria-label="GitHub">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gokul-seshiah-69aa8276/" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
